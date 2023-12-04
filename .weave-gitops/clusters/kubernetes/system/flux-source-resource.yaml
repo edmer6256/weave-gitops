@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: wego-auto-github-weave-gitops
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  url: https://github.com/edmer6256/weave-gitops.git
+
